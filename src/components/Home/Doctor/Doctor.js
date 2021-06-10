@@ -10,7 +10,7 @@ const Doctor = ({doctor}) => {
             {
             doctor.image ? <img style={{ height:'300px'}} src={`data:image/png;base64,${doctor.image.img}`}/>
             :
-            <img style={{ height:'300px'}} className="img-fluid mb-3" src={`http://localhost:5050/${doctor.img}`} alt=""/>
+            <img style={{ height:'300px'}} className="img-fluid mb-3" src={`https://quiet-beach-82539.herokuapp.com/${doctor.img}`} alt=""/>
         }
             <h4>{doctor.name}</h4>
             <p> <FontAwesomeIcon className="text-success" icon={faPhoneAlt}/> +880-188-934789</p>
@@ -19,4 +19,4 @@ const Doctor = ({doctor}) => {
 };
 
 export default Doctor;
-//`http://localhost:5050/${doctor.img}`
+//`https://quiet-beach-82539.herokuapp.com/${doctor.img}`
