@@ -7,7 +7,7 @@ const FooterCol = (props) => {
         <h6 className="text-success">{props.menuTitle ? props.menuTitle : " "}</h6>
         <ul className="list-unstyled mt-4">
              {
-                 props.menuItems.map((item, index) => <li key={index}><Link to={item.link} className="text-secondary">{item.name}</Link></li>)
+                 props.menuItems.map((item, index) => <li key={index}><Link to={item.link} style={{textDecoration: 'none'}}  className="text-secondary">{item.name}</Link></li>)
              }
         </ul>
         {props.children && props.children}
