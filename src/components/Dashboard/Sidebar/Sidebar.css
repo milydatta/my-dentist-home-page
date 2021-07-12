@@ -5,6 +5,7 @@
 }
 .sidebar li{
     margin-bottom: 2em;
+    text-decoration: none;
 }
 .sidebar li:hover span{
     display: inline-block;
