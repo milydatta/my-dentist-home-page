@@ -7,7 +7,7 @@ const AllPatients = () => {
 
 
     useEffect( () => {
-        fetch('https://quiet-beach-82539.herokuapp.com/appointments', {
+        fetch('http://localhost:5050/appointments', {
         method: 'POST',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify({appointments})
@@ -17,7 +17,7 @@ const AllPatients = () => {
    }, [])
 
     // useEffect(() => {
-    //     fetch('https://quiet-beach-82539.herokuapp.com/appointments')
+    //     fetch('http://localhost:5050/appointments')
     //         .then(res => res.json())
     //         .then(data => setAppointments(data))
     // }, [])
@@ -37,7 +37,7 @@ export default AllPatients;
 
 
 // useEffect( () => {
-//     fetch('https://quiet-beach-82539.herokuapp.com/appointmentsByDate', {
+//     fetch('http://localhost:5050/appointmentsByDate', {
 //     method: 'POST',
 //     headers: {'content-type': 'application/json'},
 //     body: JSON.stringify({date: selectedDate})
